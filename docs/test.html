@@ -17,11 +17,12 @@
     <button onclick="change_text()">Click me</button>
     
         <script>
-      var endpoint = 'https://odws.hccg.gov.tw/001/Upload/25/opendata/9059/125/39702d7d-8e4b-4061-87df-786dc8ed85bf.json'; 
+      var endpoint = 'https://blog.robertiv.org/images/x.json'; 
       const request = new XMLHttpRequest();
       
-      function getRequest(){ var a1 =  JSON.parse(request.responseText);
-          document.getElementById("demo").innerHTML =JSON.stringify(a1[44]) ;
+      function getRequest(){ 
+        var a1 =  JSON.parse(request.responseText);
+        document.getElementById("demo").innerHTML =JSON.stringify(a1[44]) ;
       }
 
       function change_text(){
